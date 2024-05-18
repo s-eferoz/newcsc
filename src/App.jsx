@@ -2,9 +2,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Layout from './layout';
-import About from './about';
-import Codefest from './codefest';
-import Council from './council';
+
+import AboutPage from './about';
+import CodefestPage from './codefest';
+import CouncilPage from './council';
 
 // Main App Component
 const App = () => {
@@ -12,9 +13,9 @@ const App = () => {
     <Router>
       <Layout>
         <Switch>
-          <Route path="/about" component={About} />
-          <Route path="/codefest" component={Codefest} />
-          <Route path="/" component={Council} />
+          <Route path="/about" component={AboutPage} />
+          <Route path="/codefest" component={CodefestPage} />
+          <Route path="/" component={CouncilPage} />
         </Switch>
       </Layout>
     </Router>
